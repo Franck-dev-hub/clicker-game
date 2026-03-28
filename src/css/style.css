@@ -1,0 +1,49 @@
+.galaxy-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 2s ease;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ui-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.btn-main {
+  background: #ffd700;
+  color: #333;
+}
+
+.btn-buy {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-buy:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
